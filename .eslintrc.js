@@ -1,0 +1,35 @@
+module.exports = {
+  extends: [
+    'plugin:@shopify/typescript',
+    'plugin:@shopify/react',
+    'plugin:@shopify/node',
+    'plugin:@shopify/prettier',
+  ],
+  rules: {
+    'react/prop-types': 'off',
+    '@shopify/jsx-no-hardcoded-content': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'import/no-unresolved': 'off',
+    'react/jsx-filename-extension': [1, {extensions: ['.tsx', '.jsx']}],
+    'jsx-a11y/media-has-caption': 'off',
+    'no-use-before-define': 'off',
+    'import/extensions': [
+      'error',
+      {
+        js: 'never',
+        json: 'always',
+        svg: 'always',
+        png: 'always',
+        jpg: 'always',
+        ico: 'always',
+        graphql: 'always',
+        css: 'always',
+        sass: 'always',
+        scss: 'always',
+        less: 'always',
+        styl: 'always',
+        client: 'always',
+      },
+    ],
+  },
+};

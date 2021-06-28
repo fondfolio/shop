@@ -1,0 +1,87 @@
+@import url('https://use.typekit.net/djw3mpd.css');
+@import url('./css/utils');
+@import url('./css/typography');
+@import url('./css/shared');
+@import url('./css/product');
+@import url('./css/page');
+@import url('./css/anchor');
+@import url('./css/footer');
+@import url('./css/header');
+@import url('./css/menu');
+@import url('./css/media');
+@import url('./css/image');
+@import url('./css/video');
+@import url('./css/pawzzle');
+@import url('./css/hero');
+@import url('./css/features');
+@import url('./css/faqs');
+@import url('./css/banner');
+@import url('./css/testimonial');
+@import url('./css/slideshow');
+@import url('./css/call-to-action');
+@import url('./css/form');
+@import url('./css/logo');
+@import url('./css/ticker');
+@import url('./css/button');
+@import url('./css/cart');
+@import url('./css/add-to-cart-controls');
+@import url('./css/nav');
+@import url('./css/drawer');
+@import url('./css/icon');
+@import url('./css/quantity-controls');
+@import url('./css/skip-to-content');
+
+model-viewer::part(default-progress-mask) {
+  display: none;
+}
+
+model-viewer::part(default-progress-bar) {
+  display: none;
+}
+
+:root {
+  --main-bg-color: rgb(245 243 219);
+  --pawzzle-bg-color: rgb(146 232 201);
+  --pawzzle-snack-color: rgb(255 135 135 / 47%);
+  --pawzzle-piece-color: rgb(152 241 209);
+  --pallet-inverted: rgb(255 255 255);
+  --pallet-blue: rgb(74 162 211);
+  --pallet-green: rgb(126 191 148);
+  --pallet-red: rgb(232 103 125);
+  --pallet-navy: rgb(0 48 66);
+  --pallet-grey: rgb(12 34 47);
+  --pallet-beige: rgb(245 243 219 / 65%);
+  --pallet-beige-light: rgb(245 243 219 / 65%);
+  --border-radius-large: 24px;
+  --box-shadow-depth-1: 0 0 20px 4px rgb(3 25 10 / 20%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  background-color: var(--main-bg-color);
+  background-image: url('/src/texture-static.jpg');
+  color: var(--pallet-grey);
+}
+
+.Main {
+  z-index: 0;
+  position: relative;
+  background: var(--pallet-beige);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.Content {
+  flex: 1;
+}
